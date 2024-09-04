@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form File</title>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Student Details Form</h1>
+            <label>Name:</label>
+            <input type="text"placeholder="Enter your Name" required/>
+            <br/><br/>
+            <label>Date Of Birth:</label>
+            <input type="date" required />
+            <br/><br/>
+            <label>Age</label>
+            <input type="number" placeholder="enter your Age" required/>
+            <br/><br/>
+            <label>College name</label>
+            <input type="text" placeholder="enter your college name" required/>
+            <br/><br/>
+            <label>Phone number</label>
+            <input type="number" placeholder="enter phonenumber" required/>
+            <br/><br/>
+            <fieldset style="width: 20%;">
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="Gender" Value="male"/>
+                <label>Male </label><br/>
+                <input type="radio" id="Female" name="Gender" value="Female"/>
+                <label>Female</label><br/>
+                <input type="radio" id="other" name="Gender" value="other"/>
+                <label>Other</label>
+
+            </fieldset>
+            <br/><br/>
+            <fieldset style="width:20%">
+                <legend>skills</legend>
+                <input type="checkbox" id="HTML" name="skills" value="HTML"/>
+                <label>HTML</label><br/>
+                <input type="checkbox" id="SQL" name="skills" value="SQL"/>
+                <label>SQL</label><br/>
+                <input type="checkbox" id="Java" name="skills" value="java"/>
+                <label>java</label><br/>
+                <input type="checkbox" id="java Script" name="skills" value="javascript"/>
+                <label>java Script</label><br/>
+                <input type="checkbox" id=".Net" name="skills" value=".Net"/>
+                <label>.Net</label>
+             </fieldset>
+             <br/><br/>
+             <!-- Dropdown -->
+             <label>Select Role</label>
+             <select>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+             </select>
+             <br/><br/>
+        <!-- Resume upload -->
+         <label>Resume:</label>
+         <input type="file"
+                 id="resume"
+                 accept=".pdf,.doc,dox"
+                 name="resume" required/>
+                 <br/><br/>
+         <label>Gmail:</label> 
+         <input type="text"
+                placeholder="Enter your Email" required/>
+                <br/><br/>
+         <label>Password:</label>  
+         <input type="password" placeholder="enter password" requiredss/>
+         <br/><br/>
+         <button>Submit</button>            
+
+        </form>
+    </div>
+    
+</body>
+</html>
